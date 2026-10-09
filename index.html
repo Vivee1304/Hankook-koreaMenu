@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ຮັນອກ ເທເບິນ · ເມນູອາຫານເກົາຫຼີ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;900&family=Noto+Serif+Lao:wght@400;600;900&display=swap">
+<link rel="stylesheet" href="food.css">
+</head>
+<body>
+<div class="dancheong" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="moon" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div class="vert" lang="ko" aria-hidden="true">한식</div>
+    <div>
+      <div class="seal" lang="ko" aria-hidden="true">맛</div>
+      <h1>Hankok TABLE<br>ຄົວອາຫານເກົາຫຼີແບບດັ້ງເດີມ</h1>
+      <p>ນ້ຳແກງຕົ້ມຊ້າໆ, ກິມຈິເຮັດເອງ ແລະ ຊີ້ນປີ້ງຖ່ານ ຕາມແບບທີ່ຄອບຄົວເກົາຫຼີແບ່ງປັນກັນມາຫຼາຍລຸ້ນຄົນ.</p>
+      <a class="btn" href="#menu">ເບິ່ງເມນູ</a>
+    </div>
+    <svg class="bowl" viewBox="0 0 300 300" role="img" aria-label="ຮູບແຕ້ມບິບິມບັບໃນຖ້ວຍ ເບິ່ງຈາກດ້ານເທິງ">
+<circle cx="150" cy="150" r="146" fill="#0B2E33"/>
+<circle cx="150" cy="150" r="138" fill="#2C7A80"/>
+<circle cx="150" cy="150" r="128" fill="#1F5F66"/>
+<circle cx="150" cy="150" r="118" fill="#F6F3E8"/>
+<g transform="rotate(0 150 150)"><ellipse cx="150" cy="82" rx="16" ry="30" fill="#5E8F3E"/><ellipse cx="146" cy="76" rx="6" ry="10" fill="#fff" opacity=".18"/></g><g transform="rotate(45 150 150)"><ellipse cx="150" cy="82" rx="14" ry="34" fill="#E0822B"/><ellipse cx="146" cy="76" rx="6" ry="12" fill="#fff" opacity=".18"/></g><g transform="rotate(90 150 150)"><ellipse cx="150" cy="82" rx="16" ry="32" fill="#E9DDB0"/><ellipse cx="146" cy="76" rx="6" ry="11" fill="#fff" opacity=".18"/></g><g transform="rotate(135 150 150)"><ellipse cx="150" cy="82" rx="17" ry="30" fill="#6B4A32"/><ellipse cx="146" cy="76" rx="7" ry="10" fill="#fff" opacity=".18"/></g><g transform="rotate(180 150 150)"><ellipse cx="150" cy="82" rx="18" ry="32" fill="#3E2A22"/><ellipse cx="146" cy="76" rx="7" ry="11" fill="#fff" opacity=".18"/></g><g transform="rotate(225 150 150)"><ellipse cx="150" cy="82" rx="14" ry="34" fill="#9CC06B"/><ellipse cx="146" cy="76" rx="6" ry="12" fill="#fff" opacity=".18"/></g><g transform="rotate(270 150 150)"><ellipse cx="150" cy="82" rx="16" ry="30" fill="#E9DDB0"/><ellipse cx="146" cy="76" rx="6" ry="10" fill="#fff" opacity=".18"/></g><g transform="rotate(315 150 150)"><ellipse cx="150" cy="82" rx="14" ry="32" fill="#7A5A8C"/><ellipse cx="146" cy="76" rx="6" ry="11" fill="#fff" opacity=".18"/></g>
+<ellipse cx="150" cy="150" rx="40" ry="38" fill="#fff"/>
+<path d="M118 150c0-22 18-38 38-36 22 2 36 18 32 38-4 20-22 34-42 30-18-4-28-14-28-32z" fill="#FBFAF4"/>
+<circle cx="152" cy="150" r="19" fill="#F2A71B"/><circle cx="146" cy="144" r="6" fill="#fff" opacity=".45"/>
+<circle cx="150" cy="150" r="10" fill="none"/>
+<ellipse cx="206" cy="196" rx="15" ry="10" fill="#B3262D" transform="rotate(-30 206 196)"/>
+<ellipse cx="203" cy="193" rx="6" ry="3" fill="#E4575C" transform="rotate(-30 203 193)"/>
+<g fill="#F6F3E8" opacity=".9"><circle cx="110" cy="118" r="2"/><circle cx="190" cy="108" r="2"/><circle cx="104" cy="190" r="2"/><circle cx="196" cy="150" r="2"/><circle cx="120" cy="226" r="2"/></g>
+</svg>
+  </div>
+</header>
+<div class="dancheong" aria-hidden="true"></div>
+
+<main id="menu">
+  <div class="head">
+    <h2 lang="ko">메뉴 · ເມນູ</h2>
+    <p>ເລືອກໝວດໝູ່ ແລ້ວກົດ “ເພີ່ມ” ເພື່ອສ້າງລາຍການສັ່ງຂອງທ່ານ.</p>
+  </div>
+  <div class="tabs" id="tabs" role="group" aria-label="ໝວດໝູ່ເມນູ"></div>
+  <div class="opts"><label><input type="checkbox" id="mild"> ເຊື່ອງເມນູເຜັດ</label></div>
+  <section id="list" aria-live="polite"></section>
+
+  <div class="order" id="order" hidden>
+    <span id="sum"></span>
+    <span><button class="clear" id="clear">ລ້າງລາຍການ</button></span>
+  </div>
+</main>
+
+<footer>
+  <p><b>Hankok TABLE</b> · ເປີດທຸກວັນ 11:00–22:00</p>
+  <p lang="ko">어서 오세요 — ຍິນດີຕ້ອນຮັບ</p>
+</footer>
+
+<script src="food.js"></script>
+</body>
+</html>
